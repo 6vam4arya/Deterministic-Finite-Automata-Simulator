@@ -46,17 +46,11 @@ The `@/` path alias points to the `src/` directory
 **Install Dependencies**
 
 ```shell
-pnpm i
+npm i
 ```
 
 **Start Preview**
 
 ```shell
-pnpm run dev
-```
-
-**To build**
-
-```shell
-pnpm run build
+npm run dev
 ```
