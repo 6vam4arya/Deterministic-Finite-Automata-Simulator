@@ -1,0 +1,52 @@
+# DFA/NFA Simulator - Development Plan
+
+## Design Guidelines
+
+### Design References
+- Clean, educational tool aesthetic inspired by automaton visualization tools
+- Dark sidebar + light canvas workspace layout
+
+### Color Palette
+- Primary: #6366F1 (Indigo - main accent)
+- Secondary: #1E293B (Slate dark - sidebar/panels)
+- Canvas BG: #F8FAFC (Light gray)
+- State Default: #E2E8F0 (Gray)
+- State Active: #FCD34D (Amber - current state highlight)
+- State Accept: #34D399 (Emerald - accepting states)
+- State Start: #60A5FA (Blue - start state)
+- Transition Arrow: #64748B (Slate)
+- Accept Result: #22C55E (Green)
+- Reject Result: #EF4444 (Red)
+
+### Typography
+- Headings: Inter font-weight 700
+- Body: Inter font-weight 400
+- State labels: Inter font-weight 600 (14px)
+
+### Key Component Styles
+- States: Circles (r=30) with labels, double circle for accepting states
+- Transitions: Curved arrows with labels
+- Buttons: Indigo background, white text, rounded-lg
+- Panels: White cards with subtle shadows
+
+## Development Tasks
+
+### Files to Create (7 files max)
+
+1. **src/pages/Index.tsx** - Main page layout with sidebar panel + canvas area
+2. **src/components/AutomatonCanvas.tsx** - SVG canvas for rendering states, transitions, drag-and-drop
+3. **src/components/ControlPanel.tsx** - Sidebar with mode toggle, state/transition creation, input string, simulation controls
+4. **src/components/SimulationControls.tsx** - Play/pause/step/reset controls with speed slider
+5. **src/hooks/useAutomaton.ts** - Core automaton state management (states, transitions, start/accept states, mode)
+6. **src/hooks/useSimulation.ts** - Simulation logic (step-by-step processing, current state tracking, accept/reject)
+7. **src/lib/automaton-utils.ts** - Utility functions (epsilon closure, DFA validation, example preloaded automata)
+
+### Features
+1. Interactive SVG canvas with drag-and-drop states
+2. Create states (click canvas), name them, mark as start/accepting
+3. Create transitions by clicking source then target state, specify symbols
+4. DFA/NFA mode toggle with validation
+5. Input string panel
+6. Step-by-step simulation with play/pause/step/reset and speed control
+7. Accept/reject result display with color feedback
+8. Preloaded example automata for quick demo
