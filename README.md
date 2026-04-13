@@ -1,56 +1,20 @@
-# Shadcn-UI Template Usage Instructions
+# 🎭 Finite Automata Simulator
 
-## technology stack
+An interactive web application designed to help students visualize, design, and simulate **Deterministic Finite Automata (DFA)** and **Non-Deterministic Finite Automata (NFA)**. 
 
-This project is built with:
+Built with modern web technologies, this tool transforms abstract theoretical computer science concepts into a tangible, step-by-step visual experience.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🚀 Features
 
-All shadcn/ui components have been downloaded under `@/components/ui`.
+- **Interactive Canvas:** Drag-and-drop to create states and draw transitions.
+- **DFA & NFA Support:** Toggle between deterministic and non-deterministic logic.
+- **Step-by-Step Simulation:** Watch the automaton process strings in real-time with highlighted active states.
+- **Validation Engine:** Instant feedback on whether a string is "Accepted" or "Rejected."
+- **Customizable States:** Easily define Start and Accepting (Final) states.
 
-## File Structure
+## 🛠️ Tech Stack
 
-- `index.html` - HTML entry point
-- `vite.config.ts` - Vite configuration file
-- `tailwind.config.ts` - Tailwind CSS configuration file
-- `package.json` - NPM dependencies and scripts
-- `src/main.tsx` - Project entry point
-- `src/App.tsx` - Router component (imports pages and sets up routes)
-- `src/pages/Index.tsx` - Main page entry point (modify this file to build your UI)
-- `src/index.css` - Existing CSS configuration
-
-## Components
-
-- All shadcn/ui components are pre-downloaded and available at `@/components/ui`
-
-## Styling
-
-- Add global styles to `src/index.css` or create new CSS files as needed
-- Use Tailwind classes for styling components
-
-## Development
-
-- Import components from `@/components/ui` in your React components
-- Customize the UI by modifying the Tailwind configuration
-
-## Note
-
-The `@/` path alias points to the `src/` directory
-
-# Commands
-
-**Install Dependencies**
-
-```shell
-npm i
-```
-
-**Start Preview**
-
-```shell
-npm run dev
-```
+- **Frontend:** [React.js](https://react.dev) / [Vite](https://vitejs.dev)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Visuals:** [React Flow](https://reactflow.dev) (or Canvas API / SVG)
+- **State Management:** [Zustand](https://github.com) or Context AP
